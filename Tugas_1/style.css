@@ -1,0 +1,16 @@
+.experience {
+    display: flex;
+}
+img {
+    width: 20em;
+}
+td {
+    padding: 2px 2px 2px 2px;
+}
+#time {
+    text-align: right;
+}
+
+#skilltype {
+    font-weight: bold;
+}

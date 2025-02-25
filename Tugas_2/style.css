@@ -1,0 +1,13 @@
+.jadwal {
+    border: 1px solid rgb(124, 124, 124);
+    /* border-collapse: collapse; */
+}
+#header, #footer {
+    background: #9b9b9b;
+}
+td, th {
+    border: 1px solid rgb(124, 124, 124);
+    /* padding: 1px; */
+}
+
+

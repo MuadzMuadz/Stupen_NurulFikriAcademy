@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background-size: fit;
+}
+body {
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+}
+.nav {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px ;
+    transition: 0.3s;
+}
+
+fieldset {
+    border: 2px solid #222;
+    padding: 10px;
+    border-radius: 5px;
+}
+legend {
+    font-weight: bold;
+    color: #222;
+}
+ul {
+    list-style-type: none; /* Hilangin bullet */
+    padding: 0;
+}
+ul li {
+    margin: 5px 5px;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+a:hover {
+    color: #24303d;
+}
+
+/* home */
+.home, .mystudy, .galery {
+    background-color: whitesmoke;
+    color: #333;
+    text-align: center;
+    width: 100%;    
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+h1 {
+    margin-bottom: 5px;
+}
+h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+p {
+    font-size: 14px;
+    line-height: 1.5;   
+    }
+.contact {
+    margin-top: 15px;
+}
+.contact a {
+    text-decoration: none;
+    color: #c2c2c2;
+    font-weight: bold;
+}
+
+/* mystudy */
+.mystudy h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+.section {
+    margin-bottom: 20px;
+}
+.section h2 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.section li {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+.section p {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+/* galery */
+.gallery-container {
+    background-color: whitesmoke;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.gallery-item img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+.marquee {
+    height: 200px; /* Sesuaikan tinggi */
+    overflow: hidden;
+    position: relative;
+}
+.marquee img {
+    position: absolute;
+    animation: scrollUp 5s linear infinite;
+}
+@keyframes scrollUp {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+}
+
+/* footer */
+footer {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: -3px;
+}
+footer .section {
+    padding-right: 20px;
+}
+footer .section p {
+    font-size: 10px;
+}
+footer .social{
+    display: flex;
+    flex-direction: row;
+}
+footer .social ul li { 
+    font-size: 8px;
+    line-height: 0.5;
+}

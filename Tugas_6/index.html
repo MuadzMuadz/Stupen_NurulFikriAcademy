@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body style="background-color: antiquewhite;">
+  <header class="container-fluid bg-light w-100 fs-3 fw-2">header</header>
+  <nav class="navbar col-md-12 navbar-expand-md navbar-dark bg-dark container-fluid">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">MyWebsite</a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="partials/home.html" target="contentFrame">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="partials/study.html" target="contentFrame">MyStudy</a></li>
+            <li class="nav-item"><a class="nav-link" href="partials/gallery.html" target="contentFrame">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="partials/datatables.html" target="contentFrame">Datatable</a></li>
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+        </ul>
+    </div>
+  </nav>
+<div class="content container-fluid bg-light">
+  <div class="row" style=" height: 79vh;">
+    <div class="border-right border-dark col-md-2 h-100 p-3">
+      <h3>External Links</h3>
+      <ul>
+        <li><a href="https://google.com" target="_blank">Google</a></li>
+        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+        <li><a href="https://wikipedia.org" target="_blank">Wikipedia</a></li>
+        <li><a href="https://news.ycombinator.com" target="_blank">Hacker News</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-10">
+      <iframe class="h-100 w-100 p-2" name="contentFrame" src="partials/home.html"></iframe>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div id="modalContent"></div>
+      </div>
+  </div>
+</div>
+<footer class="row fixed-bottom bg-light p-3 row">
+  <div class="col-sm-5 px-3 h-100">
+      <h5><strong>Mu’adz</strong></h5>
+      <p>
+        Jakarta, Indonesia | 
+        Phone: +62 831 5145 2881 | 
+        Email: <a href="mailto:muadz848@gmail.com" style="color: #1DA1F2;">muadz848@gmail.com</a> | 
+        <a href="https://linkedin.com/in/muadzmuthohirin" style="color: #1DA1F2; text-decoration: none;">LinkedIn</a> | 
+        <a href="https://ryvnmax.live" style="color: #1DA1F2; text-decoration: none;">Website</a>
+    </p>
+  </div>
+  <p class="col-sm-5 ">&copy; 2025 Mu’adz. All Rights Reserved.</p>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Saat modal dibuka, load konten dari login.html
+            $('#loginModal').on('show.bs.modal', function () {
+                $('#modalContent').load('partials/login.html');
+            });
+        });
+    </script>
+
+</body>
+</html>

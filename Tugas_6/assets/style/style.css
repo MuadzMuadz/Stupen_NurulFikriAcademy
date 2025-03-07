@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-nav {
+    display: flex; 
+    gap: 20px; 
+}
+
+.navbar-nav .nav-item {
+    list-style: none; /* Hilangkan bullet point */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Biar lebih kontras */
+    text-decoration: none;
+    padding: 8px 12px; /* Biar rapi */
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+.content {
+    height: 101vh;
+}
+/* Sidebar */
+.section {
+    padding: 20px;
+    border-right: black;
+}
+/* Main Content dengan iFrame */
+iframe {
+    flex-grow: 1;
+    border: none;
+}
+/* Footer */
+footer {
+    height: 20vh;
+    text-align: center;
+    margin-bottom: -3px;
+}

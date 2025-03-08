@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .gallery-container {
+            width: 100%;
+            margin: auto;
+            columns: 4;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .gallery-container .gallery-item {
+            width: 100%;
+            margin-bottom: 10px;    
+        }
+        .gallery-item img {
+            width: 500px;
+            max-width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0px 0px 10px rgb(40, 235, 241);
+        }
+        @media (max-width : 1200px) {
+            .gallery-container {
+                width: 100%;
+                columns: 5;
+            }
+        }
+        @media (max-width : 768px) {
+            .gallery-container {
+                width: 100%;
+                columns: 6;
+            }
+        }
+        @media (max-width :480px) {
+            .gallery-container {
+                width: 100%;
+                columns: 1;
+            }
+        }
+        .marquee {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .marquee img {
+            position: relative;
+            animation: scrollUp 5s linear infinite;
+        }
+        @keyframes scrollUp {
+            0% { transform: translateY(100%); }
+            100% { transform: translateY(-100%); }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body class="gallery-container">
+    <!-- Gambar statis -->
+    <div class="gallery-item"><img src="../assets/image/b0703c3f-cdb6-4e67-b1fc-44bb7b47175a.jpeg" alt="Image 1"></div>
+    <div class="gallery-item"><img src="../assets/image/Battle Pass Episode 6_ Act I - VALORANT.jpeg" alt="Image 2"></div>
+    <div class="gallery-item"><img src="../assets/image/cd409904-bed1-40d6-8fff-c2a8373da1b6.jpeg" alt="Image 3"></div>
+    <div class="gallery-item"><img src="../assets/image/Heaven and Hell.png" alt="Image 4"></div>
+    <div class="gallery-item"><img src="../assets/image/Shan Hai Icefire.png" alt="Image 9"></div>
+
+    <!-- Gambar dengan marquee scroll up -->
+    <div class="gallery-item marquee">
+        <img src="../assets/image/Li Xin (1).png" alt="Image 5">
+    </div>
+    <div class="gallery-item marquee">
+        <img src="../assets/image/Li Xin.png" alt="Image 6">
+    </div>
+
+    <!-- Gambar statis lagi -->
+    <div class="gallery-item"><img src="../assets/image/me.png" alt="Image 7"></div>
+    <div class="gallery-item"><img src="../assets/image/Searing Blade - Li Xin.jpg" alt="Image 8"></div>
+    
+
+    <!-- Marquee lagi -->
+    <div class="gallery-item marquee">
+        <img src="../assets/image/VALORENT AGENT _ YORU.jpeg" alt="Image 10">
+    </div>
+    <div class="gallery-item marquee">
+        <img src="../assets/image/YORU WITH KATANA VALORANT _ FOLLOW FOR MORE VALORANT CREATIONS 💙.jpeg" alt="Image 11">
+    </div>
+    
+</body>
+</html>
